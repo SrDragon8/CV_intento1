@@ -1,0 +1,110 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; /* margen interno */
+}
+
+header
+{
+    position: sticky; /* decirle a la barra de navegación que se quede ahí pegado */
+    top: 0; /* que se pegue arriba */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #006362;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: center; /* que se centren */
+    list-style: none; /* estilo de la lista */
+    color: #FFC745;
+}
+
+nav ul li
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 20px; /* arriba y abajo <-> izquierda y derecha */
+    background-color: #006362;
+}
+
+section 
+{
+    height: 95vh;
+}
+
+section#hero
+{
+    background-color: #006362;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1
+{
+    font-size:  3em;
+    text-transform: uppercase;
+    color: #FFC745;
+} /* que va a suceder en todos los H1 dentro del id hero */
+
+h2
+{
+    font-size:  2em;
+    text-align: center;
+    color: #FFC745;
+} /* que va a suceder en todos los H2 dentro del id hero */
+
+section#projects
+{
+    background-color: #252850;
+}
+
+section#projects h3
+{
+    color: #E6B33E;
+    text-align: center;
+}
+
+section#projects h4
+{
+    color: #E6B33E;
+    text-align: center;
+}
+
+section#projects p
+{
+    color: #FA6948;
+}
+
+section#projects a
+{
+    color: red;
+}
+.projects-list
+{
+    display: flex;
+    flex-wrap: wrap; /* en caso de no caber su imagen de px establecida en ese espacio, saltar de línea */
+    justify-content: center;
+}
+
+.project-detail /* esto llama a todas las clases que son cada cajita de proyecto */
+{
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 550px;
+    margin: 20px;
+}
+
+.project-detail img
+{
+    width: 100%;
+}
+
+section#contacts
+{
+    background-color: #006362;
+}
